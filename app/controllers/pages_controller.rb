@@ -20,4 +20,9 @@ class PagesController < ApplicationController
 
   def kittens
   end
+
+  def contest
+    flash[:notice] = "Sorry, the contest has ended"
+    redirect_to "/welcome"
+  end
 end
