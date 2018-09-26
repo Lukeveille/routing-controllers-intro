@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   get '/welcome' => 'pages#welcome'
 
-  get "/about_me" => "pages#about"
+  get '/about_me' => 'pages#about'
+
+  get '/kitten/:size' => 'pages#kitten'
 end
