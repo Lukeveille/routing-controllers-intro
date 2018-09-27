@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get '/' => 'pages#welcome'
+  root 'pages#welcome'
 
   get '/welcome' => 'pages#welcome'
 
   get '/about_me' => 'pages#about'
 
-  get '/kitten/:size' => 'pages#kitten'
+  get '/kitten/:size' => 'pages#kitten', as: 'kitten'
 
   get '/kittens/:size' => 'pages#kittens'
 
